@@ -13,9 +13,10 @@ class PostController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
+    public function posts()
     {
-        //
+        echo "single posts called";
+
     }
 
     /**
@@ -82,5 +83,8 @@ class PostController extends Controller
     public function destroy(post $post)
     {
         //
+    }
+    public function filter(){
+        echo "filters";
     }
 }
