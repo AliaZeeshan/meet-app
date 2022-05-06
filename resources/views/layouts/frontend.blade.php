@@ -9,7 +9,7 @@
     <style>
         h1
         {
-        color: red;
+        color: blue;
         }
 
     </style>
@@ -19,7 +19,7 @@
 <div class="container">
     @section('header')
         <h2>this is header tamplate</h2>
-        @show
+        @endsection
     @yield('content')
 </body>
 </html>

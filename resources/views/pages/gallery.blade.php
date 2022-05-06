@@ -1,10 +1,8 @@
 @extends('layouts.frontend')
 @section('title')
-    contact us
+    gallery
 @endsection
 @section('content')
-    <!--- how to use blade templating engine--->
-
-    <h1>gallery page </h1>
+    <h1>gallery pages is a usefull</h1>
 
 @endsection

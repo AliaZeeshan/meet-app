@@ -1,3 +1,3 @@
 <div>
-    <!-- Do what you can, with what you have, where you are. - Theodore Roosevelt -->
+    <h2 style="{{$alertStyle}}">{{$message}}{{$name}}{{$showName()}}</h2>
 </div>
