@@ -4,7 +4,7 @@ namespace App\View\Components;
 
 use Illuminate\View\Component;
 
-class AlertMessage extends Component
+class forms.input extends Component
 {
     /**
      * Create a new component instance.
@@ -23,9 +23,6 @@ class AlertMessage extends Component
      */
     public function render()
     {
-        return '
-<div>
-    <h2>Simplicity is the essence of happiness. - Cedric Bledsoe </h2>
-</div>';
+        return view('components.forms.input');
     }
 }

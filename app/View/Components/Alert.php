@@ -9,17 +9,17 @@ class Alert extends Component
 {
     public $alertStyle;
     public $message;
-    private $name;
+    public $name;
     /**
      * Create a new component instance.
      *
      * @return void
      */
-    public function __construct($firstName,$lastName,$alertStyle,$message)
+    public function __construct($firstName = null,$lastName = null,$alertStyle = null,$message = null)
     {
         $this->alertStyle=$alertStyle;
         $this->message=$message;
-        $this->name=$firstName.''.$lastName;
+        $this->name=$firstName.' '.$lastName;
 
     }
 

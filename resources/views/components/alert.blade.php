@@ -1,3 +1,3 @@
 <div>
-    <h2 style="{{$alertStyle}}">{{$message}}{{$name}}{{$showName()}}</h2>
+    <h2 {{$attributes->merge(['class'=>'alert','title'=>'Alert Component']) }}>{{$showName()}}-{{$componentName}}</h2>
 </div>

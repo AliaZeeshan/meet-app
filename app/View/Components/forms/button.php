@@ -1,19 +1,20 @@
 <?php
 
-namespace App\View\Components;
+namespace App\View\Components\forms;
 
 use Illuminate\View\Component;
 
-class AlertMessage extends Component
+class button extends Component
 {
+    public $text;
     /**
      * Create a new component instance.
      *
      * @return void
      */
-    public function __construct()
+    public function __construct($text="Submit")
     {
-        //
+        $this->text=$text;
     }
 
     /**
@@ -23,9 +24,6 @@ class AlertMessage extends Component
      */
     public function render()
     {
-        return '
-<div>
-    <h2>Simplicity is the essence of happiness. - Cedric Bledsoe </h2>
-</div>';
+        return view('components.forms.button');
     }
 }

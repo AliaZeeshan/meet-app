@@ -13,9 +13,9 @@ class PostController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function posts()
+    public function id()
     {
-        echo "single posts called";
+       // echo "single posts called";
 
     }
 
@@ -37,7 +37,11 @@ class PostController extends Controller
      */
     public function store(StorepostRequest $request)
     {
-        //
+        $request->validate([
+            'name'=>['required'],
+            'email'=>['required'],
+        ]);
+        dd($request->all());
     }
 
     /**

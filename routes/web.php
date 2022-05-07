@@ -19,7 +19,7 @@ use App\Http\Controllers\PostController;
 */
 
 Route::get('/',function (){
-    return view('welcome',['name'=>'john Doe']);
+    return view('welcome');
 });
 //static informarion about view pass krny sy
 //Route::view('/about','about',['message'=>'this is message about view'])->name('about');

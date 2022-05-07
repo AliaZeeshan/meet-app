@@ -1,16 +1,22 @@
-<!doctype html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>laravel component tutorial</title>
-</head>
-<body>
-<x-alert alertStyle="color:red" firstName="Alia" lastName="kanwal"/>
-<x-message message="this is a message"/>
-<x-alert-message/>
+<x-layouts.frontend>
+    <x-alert style="color: pink;text-align: center;background-color: crimson;padding-top: 10px;padding-right: 5px;" class="bg-danger" first-Name="layouts with component" alert-Style=""></x-alert>
+    <div class="errors">
+        @if($errors->any())
+            @foreach($errors->all() as $error)
+            <div class="alert alert-danger">
+                {{$error}}
+            </div>
+                @endforeach
+            @endif
+    </div>
+    <form method="post" action="{{route('posts.store')}}">
+        @csrf
+        <x-forms.input type="text" name="name" label="name" placeholder="enter your name" />
+        <x-forms.input type="email" name="email" label="email" placeholder="enter your email" />
+        <x-forms.input type="checkbox" />
+        <x-forms.input type="radio" />
+        <x-forms.input type="file" name="thumbnail" label="thumbnail" />
+        <x-forms.button type="submit" text="submit" />
 
-</body>
-</html>
+    </form>
+</x-layouts.frontend>
